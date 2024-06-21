@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@layer components {
+  .nor-btn {
+    @apply flex items-center h-[40px] flex-shrink-0 rounded-[35px] bg-[#FFB800] [box-shadow:0px_2px_5px_2px_rgba(205,_205,_205,_0.70)] text-[#000] font-inter sm:text-xl not-italic font-medium;
+  }
+  .rej-btn {
+    @apply flex items-center border-[3px] border-solid rounded-[35px] border-[#FFB800] bg-[#FFF] [box-shadow:0px_2px_5px_2px_rgba(205,_205,_205,_0.70)] text-[#000] font-inter sm:text-xl not-italic font-medium;
+  }
+  .header {
+    @apply font-inter sm:text-[25px] text-[20px] not-italic font-medium;
+  }
+  .sub-header {
+    @apply font-inter sm:text-xl text-[18px] not-italic font-medium;
+  }
+  .sub-typo {
+    @apply font-inter sm:text-[15px] text-[13px] not-italic font-medium;
+  }
+  .nor-div {
+    @apply bg-[#FFF3D3] [box-shadow:0px_2px_5px_2px_rgba(205,_205,_205,_0.75)] rounded-[10px] sm:px-5 sm:py-5 py-[15px] px-[15px];
+  }
+  .tab-div {
+    @apply bg-white [box-shadow:0px_2px_5px_2px_rgba(205,_205,_205,_0.75)] rounded-[10px] sm:px-5 sm:py-5 py-[15px] px-[15px];
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-300; /* Track color */
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-yellow-500 rounded-full; /* Thumb color */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-yellow-400; /* Hover color */
+  }
+}
